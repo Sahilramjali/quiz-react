@@ -10,7 +10,7 @@ const Quiz=()=>{
             {quizState.correctCount<=2 &&<div className="poor">Better luck next time</div>}
             <div className="result-info">
                 <div>you have completed the quiz</div>
-                <div>You have got {quizState.correctCount} of {quizState.question.length} right.</div>
+                <div>You have got {quizState.correctCount} out of {quizState.question.length} right.</div>
            <div className="next-button" onClick={()=>dispatch({type:"Restart"})}>Restart</div>
             </div>
 
